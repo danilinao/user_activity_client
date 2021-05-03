@@ -12,7 +12,8 @@ public:
   MainWindow(QWidget *parent = 0);
 
 public slots:
-  void iconActivated(QSystemTrayIcon::ActivationReason);
+  void slotTimerAlarm();
+  void slotSaveTimer();
 
 private:
   QSystemTrayIcon* trayIcon;
